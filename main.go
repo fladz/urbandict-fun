@@ -152,9 +152,6 @@ func showDefinition(w http.ResponseWriter, definition def) {
 	if err := resTmpl.Execute(w, definition); err != nil {
 		w.Write([]byte("¯\\_(ツ)_/¯"))
 	}
-	//	w.Write([]byte(fmt.Sprintf("Definition for %s\n\n", term)))
-	//	w.Write([]byte(fmt.Sprintf("Definition:\n%s\n\n", definition.Definition)))
-	//	w.Write([]byte(fmt.Sprintf("Example:   \n%s\n", definition.Example)))
 }
 
 func getRandomTerm() string {
